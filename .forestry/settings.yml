@@ -11,9 +11,6 @@ sections:
   match: "**/*"
   templates:
   - product
-- type: document
-  path: site.config.json
-  label: Configuration
 - type: directory
   path: content/pages
   label: Pages
@@ -21,6 +18,9 @@ sections:
   match: "**/*"
   templates:
   - pages1
+- type: document
+  path: site.config.json
+  label: Configuration
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
