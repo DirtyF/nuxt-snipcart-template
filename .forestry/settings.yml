@@ -27,6 +27,11 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
+  preview_env:
+  - CLOUD_NAME=cloudinary
+  - API_KEY=123YOURAPIKEY
+  - API_SECRET=******
+  - data_api_key=123YOURAPIKEY
   preview_output_directory: dist
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
